@@ -1,0 +1,801 @@
+/*###################### small device #####################################*/
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    #header {
+        transition: all 0.5s;
+        z-index: 997;
+        padding: 15px 0;
+    }
+
+    #header.header-scrolled,
+    #header.header-inner-pages {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .langText{
+        display:none;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        background-color: #222;
+        border: none;
+    }
+
+    .dropdown-menu a {
+        color: #fff;
+    }
+
+    a .dropdown-item:hover {
+        color: #222;
+    }
+
+    .lang-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+        /* border: 1px solid var(--platform-btn-color); */
+        color: #fff;
+        font-weight: 600;
+        background-color: transparent;
+    }
+
+    .lang-btn:hover {
+        /* background-color: var(--platform-btn-color); */
+        color: #fff;
+    }
+
+    .ibLogin-btnResponsive {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .ibLogin-btnPC {
+        display: none;
+    }
+
+    .ibRegister-btnPC {
+        display: none;
+    }
+
+    #hero .container {
+        position: absolute;
+        top: 130px;
+        text-align: center;
+    }
+
+    #hero h1 {
+        margin: auto 10%;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        color: #fff;
+        padding-bottom: 40px;
+
+    }
+
+    #hero h2 {
+        color: rgba(255, 255, 255, 1);
+        margin: 10px 10px 10px 10px;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 30px;
+        font-family: var(--quicksand-font);
+        padding-bottom: 30px;
+    }
+
+    /* ############ custom card design css start################# */
+    .text-center {
+        text-align: center;
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .card-container {
+        background-color: transparent;
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-item {
+        position: relative;
+        padding: 10px 20px 10px 20px;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        min-height: 200px;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flipbox-bg {
+        background-image: url("../img//ctaCardImg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+
+    }
+
+    .flipboxIcon {
+        font-size: 42px;
+    }
+
+    .flip-box-header {
+        font-size: 28px;
+    }
+
+    .flip-box h3 {
+        font-size: 22px;
+        line-height: 1.4em;
+        text-transform: capitalize;
+    }
+
+    .flip-box-img {
+        margin-top: 25px;
+    }
+
+    /* ############ custom card design css end  ################# */
+
+    /*######### Range Section start ###############*/
+    .earnBannerSection{
+        width:100%;
+        padding:20px 20px 20px 20px;
+        border:0.9erm solid #ffc451;       
+        border-radius: 10px 10px 10px 10px;    
+        background: linear-gradient(190.1deg, rgba(0, 0, 0, 0.2) 58.5%, rgba(255, 255, 0, 0.1) 92.4%);
+      }
+      .earnBannerSection h4{
+        color:#fff;
+    }
+    .earnBannerSection ul li{
+        color:#fff;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    .earnBannerSection ul li strong{
+        color:#ffc451;
+    }
+    #rangeValue {
+        /* position: relative; */
+        display: block;
+        text-align: center;
+        font-size: 4em;
+        color: #999;
+        font-weight: 400;
+    }
+
+    .range {
+        width: 100%;
+        height: 24px;
+        -webkit-appearance: none;
+        background: #111;
+        outline: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+    .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(255, 215, 0, 0.7);
+        cursor: pointer;
+        border: 4px solid #333;
+        box-shadow: -407px 0 0 400px rgba(255, 215, 0, 1);
+    }
+
+    #earnAmount {
+        font-size: 36px;
+    }
+
+    /*######### Range Section end ###############*/
+
+    .cta2 {
+        background-color: black;
+        padding: 40px 0px 0px 0px;
+    }
+    .myLink {
+        display: block;
+        padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        background: none;
+        border: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      }
+}
+
+
+/*###################### tablet device #####################################*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {    
+    #header {
+        transition: all 0.5s;
+        z-index: 997;
+        padding: 15px 0;
+    }
+
+    #header.header-scrolled,
+    #header.header-inner-pages {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .langText{
+        display:none;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        background-color: #222;
+        border: none;
+    }
+
+    .dropdown-menu a {
+        color: #fff;
+    }
+
+    a .dropdown-item:hover {
+        color: #222;
+    }
+
+    .lang-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 22px;
+        /* border: 1px solid var(--platform-btn-color); */
+        color: #fff;
+        font-weight: 600;
+        background-color: transparent;
+    }
+
+    .lang-btn:hover {
+        /* background-color: var(--platform-btn-color); */
+        color: #fff;
+    }
+
+    .ibLogin-btnResponsive {
+        font-size: 36px;
+        color: #fff;
+    }
+
+    .ibLogin-btnPC {
+        display: none;
+    }
+
+    .ibRegister-btnPC {
+        display: none;
+    }
+
+    #hero {
+        width: 100%;
+        min-height: 60vh;
+        background: url("../img/partner-program-bg.webp") top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #hero .container {
+        position: absolute;
+        top: 200px;
+        text-align: center;
+    }
+
+    #hero h1 {
+        margin: auto 10%;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 52px;
+        color: #fff;
+        padding-bottom: 40px;
+
+    }
+
+    #hero h2 {
+        color: rgba(255, 255, 255, 1);
+        margin: 10px 5px 10px 5px;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        font-family: var(--quicksand-font);
+        padding-bottom: 30px;
+    }
+
+    /* ############ custom card design css start################# */
+    .text-center {
+        text-align: center;
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .card-container {
+        background-color: transparent;
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-item {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        min-height: 220px;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flipbox-bg {
+        background-image: url("../img/partner-commission.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+
+    }
+
+    .flipboxIcon {
+        font-size: 42px;
+    }
+
+    .flip-box-header {
+        font-size: 36px;
+    }
+
+    .flip-box h3 {
+        font-size: 24px;
+        line-height: 1.4em;
+        text-transform: capitalize;
+    }
+
+    .flip-box-img {
+        margin-top: 25px;
+    }
+
+    /* ############ custom card design css end  ################# */
+
+    /*######### Range Section start ###############*/
+    .earnBannerSection{
+        width:100%;
+        padding:20px 20px 20px 20px;
+        border:0.9erm solid #ffc451;       
+        border-radius: 10px 10px 10px 10px;    
+        background: linear-gradient(190.1deg, rgba(0, 0, 0, 0.2) 58.5%, rgba(255, 255, 0, 0.1) 92.4%);
+      }
+    #rangeValue {
+        /* position: relative; */
+        display: block;
+        text-align: center;
+        font-size: 6em;
+        color: #999;
+        font-weight: 400;
+    }
+
+    .range {
+        width: 100%;
+        height: 24px;
+        -webkit-appearance: none;
+        background: #111;
+        outline: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+    .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(255, 215, 0, 0.7);
+        cursor: pointer;
+        border: 4px solid #333;
+        box-shadow: -407px 0 0 400px rgba(255, 215, 0, 1);
+    }
+
+    /*######### Range Section end ###############*/
+}
+
+
+/*###################### Large device #####################################*/
+@media only screen and (min-width: 1025px) {
+    .ibLogin-btnResponsive {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        background-color: #222;
+        border: none;
+    }
+
+    .dropdown-menu a {
+        color: #fff;
+    }
+
+    a .dropdown-item:hover {
+        color: #222;
+    }
+
+    .lang-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+        /* border: 1px solid var(--platform-btn-color); */
+        color: #fff;
+        font-weight: 600;
+        background-color: transparent;
+    }
+
+    .lang-btn:hover {
+        /* background-color: var(--platform-btn-color); */
+        color: #fff;
+    }
+
+    /* ############ custom card design css start################# */
+    .text-center {
+        text-align: center;
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .card-container {
+        background-color: transparent;
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-item {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        min-height: 250px;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flipbox-bg {
+        background-image: url("../img/partner-commission.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .flipboxIcon {
+        font-size: 60px;
+    }
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+
+    }
+
+    .flip-box-header {
+        font-size: 48px;
+    }
+
+    .flip-box p {
+        font-size: 28px;
+        line-height: 1.4em;
+        text-transform: capitalize;
+    }
+
+    .flip-box-img {
+        margin-top: 25px;
+    }
+
+    /* ############ custom card design css end  ################# */
+
+
+    /*######### Range Section start ###############*/
+    .earnBannerSection{
+        width:100%;
+        padding:20px 20px 20px 20px;
+        border:0.9erm solid #ffc451;
+        /* height:250px; */
+        border-radius: 10px 10px 10px 10px;    
+        background: linear-gradient(190.1deg, rgba(0, 0, 0, 0.2) 58.5%, rgba(255, 255, 0, 0.1) 92.4%);
+      }
+    #rangeValue {
+        /* position: relative; */
+        display: block;
+        text-align: center;
+        font-size: 6em;
+        color: #999;
+        font-weight: 400;
+    }
+
+    .range {
+        width: 100%;
+        height: 24px;
+        -webkit-appearance: none;
+        background: #111;
+        outline: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+    .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(255, 215, 0, 0.7);
+        cursor: pointer;
+        border: 4px solid #333;
+        box-shadow: -407px 0 0 400px rgba(255, 215, 0, 1);
+    }
+    .earnBannerSection h4{
+        color:#fff;
+    }
+    .earnBannerSection ul li{
+        color:#fff;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    .earnBannerSection ul li strong{
+        color:#ffc451;
+    }
+
+    /*######### Range Section end ###############*/
+}

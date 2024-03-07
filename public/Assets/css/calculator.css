@@ -1,0 +1,53 @@
+.calculatorSection .calHeader {
+  margin-bottom: 40px;
+  border-bottom: 0.05em solid #ffbb38;
+}
+
+.decBtn,
+.incBtn {
+  background-color: #222;
+  border: 0.05em solid #fff;
+  color: #ffbb38;
+  font-size: 22px;
+}
+
+.decBtn:hover,
+.incBtn:hover {
+  background-color: black;
+  border: 0.05em solid #ffbb38;
+  color: #fff;
+}
+
+#marginCalculatorForm label {
+  font-size: 20px;
+  text-align: center;
+}
+
+#marginCalculatorForm .form-control {
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+#marginResult {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#resultContainer{
+  /* margin:0% 0% 0% 27%; */
+  display: none;
+}
+#resultContainer span{
+  font-size:22px;
+  line-height: 42px;
+}
+/* #resultContainer strong{
+  font-size:14px;  
+} */
+#resultMargin,#resultProfit{
+  font-size: 32px;
+  color: #ffbb38;
+}
+

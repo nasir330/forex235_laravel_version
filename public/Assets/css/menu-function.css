@@ -1,0 +1,267 @@
+:root {
+    --theme-bg-color: black;
+    --section-bg-color: #222;
+    --btn-bg-color: black;
+    --btn-hover-color: #222;
+    --menu-border-color: #333;
+    --platform-btn-color: #EECA03;
+}
+
+
+/*###################### small device #####################################*/
+@media only screen and (max-width: 600px) {
+
+    /*  menu side nav styles start */
+    .tradingDataMenu,
+    .platformDataMenu,
+    .marketDataMenu,
+    .newsAnalysisDataMenu,
+    .toolsEducationDataMenu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* z-index: -1; */
+        display: none;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    .tradingDataMenu.menu-open,
+    .platformDataMenu.menu-open,
+    .marketDataMenu.menu-open,
+    .newsAnalysisDataMenu.menu-open,
+    .toolsEducationDataMenu.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .tradingDataMenu a,
+    .platformDataMenu a,
+    .marketDataMenu a,
+    .newsAnalysisDataMenu a,
+    .toolsEducationDataMenu a {
+        color: #f1f1f1;
+    }
+
+    .tradingDataMenu a:hover,
+    .platformDataMenu a:hover,
+    .marketDataMenu a:hover,
+    .newsAnalysisDataMenu a:hover,
+    .toolsEducationDataMenu a:hover {
+        color: var(--platform-btn-color);
+    }
+
+    .topMenuIcon {
+        font-size: 16px;
+    }
+
+    .tradingDataMenu .backBtn,
+    .platformDataMenu .backBtn,
+    .marketDataMenu .backBtn,
+    .newsAnalysisDataMenu .backBtn,
+    .toolsEducationDataMenu .backBtn {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .tradingDataMenu .menuClosebtn,
+    .platformDataMenu .menuClosebtn,
+    .marketDataMenu .menuClosebtn,
+    .newsAnalysisDataMenu .menuClosebtn,
+    .toolsEducationDataMenu .menuClosebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #tradingDataMenu ul li,
+    #platformDataMenu ul li,
+    #marketDataMenu ul li,
+    #newsAnalysisDataMenu ul li,
+    #toolsEducationDataMenu ul li {
+        padding: 5px 5px 5px 20px;
+    }
+
+    #tradingDataMenu ul li span,
+    #platformDataMenu ul li span,
+    #marketDataMenu ul li span,
+    #newsAnalysisDataMenu ul li span,
+    #toolsEducationDataMenu ul li span {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: var(--platform-btn-color);
+    }
+
+    #tradingDataMenu ul li .menu-data,
+    #platformDataMenu ul li .menu-data,
+    #marketDataMenu ul li .menu-data,
+    #newsAnalysisDataMenu ul li .menu-data,
+    #toolsEducationDataMenu ul li .menu-data {
+        font-size: 14px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 0px 0px 0px 5px;
+    }
+
+}
+
+
+/*###################### tablet device #####################################*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    /*  menu side nav styles start */
+    .tradingDataMenu,
+    .platformDataMenu,
+    .marketDataMenu,
+    .newsAnalysisDataMenu,
+    .toolsEducationDataMenu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* z-index: -1; */
+        display: none;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    .tradingDataMenu.menu-open,
+    .platformDataMenu.menu-open,
+    .marketDataMenu.menu-open,
+    .newsAnalysisDataMenu.menu-open,
+    .toolsEducationDataMenu.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .tradingDataMenu a,
+    .platformDataMenu a,
+    .marketDataMenu a,
+    .newsAnalysisDataMenu a,
+    .toolsEducationDataMenu a {
+        color: #f1f1f1;
+    }
+
+    .tradingDataMenu a:hover,
+    .platformDataMenu a:hover,
+    .marketDataMenu a:hover,
+    .newsAnalysisDataMenu a:hover,
+    .toolsEducationDataMenu a:hover {
+        color: var(--platform-btn-color);
+    }
+
+    .topMenuIcon {
+        font-size: 30px;
+    }
+
+    .tradingDataMenu .backBtn,
+    .platformDataMenu .backBtn,
+    .marketDataMenu .backBtn,
+    .newsAnalysisDataMenu .backBtn,
+    .toolsEducationDataMenu .backBtn {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+
+    .menuArrow {
+        font-size: 24px;
+        padding-right: 30px;
+    }
+
+    .tradingDataMenu .menuClosebtn,
+    .platformDataMenu .menuClosebtn,
+    .marketDataMenu .menuClosebtn,
+    .newsAnalysisDataMenu .menuClosebtn,
+    .toolsEducationDataMenu .menuClosebtn {
+        position: absolute;
+        top: 0;
+        right: 60px;
+        font-size: 40px;
+    }
+
+    #tradingDataMenu ul li,
+    #platformDataMenu ul li,
+    #marketDataMenu ul li,
+    #newsAnalysisDataMenu ul li,
+    #toolsEducationDataMenu ul li {
+        padding: 5px 5px 5px 60px;
+    }
+
+    #tradingDataMenu ul li span,
+    #platformDataMenu ul li span,
+    #marketDataMenu ul li span,
+    #newsAnalysisDataMenu ul li span,
+    #toolsEducationDataMenu ul li span {
+        padding-left: 32px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: var(--platform-btn-color);
+    }
+
+    #tradingDataMenu ul li .menu-data,
+    #platformDataMenu ul li .menu-data,
+    #marketDataMenu ul li .menu-data,
+    #newsAnalysisDataMenu ul li .menu-data,
+    #toolsEducationDataMenu ul li .menu-data {
+        font-size: 22px;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 0px 0px 0px 5px;
+    }
+
+}
+
+
+/*###################### Large device #####################################*/
+@media only screen and (min-width: 1025px) {
+    #menuListContainer {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        border-bottom: 0.5px solid var(--platform-btn-color);
+    }
+    #trading,
+    #platforms,
+    #markets,
+    #newsAnalysis,
+    #education {
+        display: none;
+    }
+    .menu-list .menu-open{
+        display: block;
+    }
+    .menu-data strong {
+        color: var(--platform-btn-color);
+        margin-top: 20px;
+        font-size: 18px;
+        border-bottom: 0.5px solid var(--platform-btn-color);
+    }
+    .menu-data ul {
+        list-style-type: none;
+        /* padding: 0; */
+    }
+    .menu-data ul li {
+        display: block;
+        margin-bottom: 10px;
+        /* Add margin between list items */
+    }
+    .menu-data ul li a {
+        color: #fff;
+    }
+
+}

@@ -1,0 +1,2171 @@
+:root {
+    --theme-bg-color: black;
+    --section-bg-color: #222;
+    --btn-bg-color: black;
+    --btn-hover-color: #222;
+    --menu-border-color: #333;
+    --platform-btn-color: #EECA03;
+}
+
+
+/*###################### small device #####################################*/
+@media only screen and (max-width: 600px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .mid-footer p{
+        font-size: 18px;
+    }
+    .tableContainer {
+        overflow-x: auto;
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        text-wrap: nowrap;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #fff;
+    }
+
+    .dropdown-data {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-data strong {
+        font-size: 16px;
+    }
+
+    .dropdown-data ul li {
+        margin-left: 0px;
+        line-height: 16px;
+        overflow: hidden;
+    }
+
+    .dropdown-data ul li a {
+        font-size: 14px;
+    }
+
+    .menuBtn {
+        background-color: #F5D20E;
+        padding: 0px 15px 0px 15px;
+        /*top right bottom left*/
+        line-height: 1.4em;
+        font-size: 20px;
+        border-radius: 20px 0px 20px 0px;
+        transform: skewX(-15deg);
+        margin-left: 25px;
+    }
+
+    .authMenuBtn .autIcon {
+        font-size: 28px;
+    }
+
+    /*Slider iamge section*/
+    .myCarrowselSlider {
+        width: 100%;
+        min-height: 480px;
+        background: url("../images/sliders/slider-bg3.webp") top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .myCarrowselSlider h1 {
+        margin: 40% 0% 0% 0%;
+        font-size: 36px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .myCarrowselSlider h3 {
+        margin: 10% 0% 0% 0%;
+        /* font-size: 60px; */
+        color: #fff;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .myCarrowselSlider h1.show,
+    .myCarrowselSlider h3.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .myCarrowselSlider img {
+        width: 100%;
+    }
+
+    .platform-slogan button {
+        margin: 5% 25%;
+    }
+
+    .icon-btn img {
+        width: 100%;
+        margin: -24% 45%;
+    }
+
+    .payments img {
+        width: 100%;
+    }
+
+    .depositWithdrawalSection {
+        background-image: url("../images/deposit-withdrawal.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .depositWithdrawalSection h1 {
+        margin: 15% auto;
+        font-size: 36px;
+        color: #fff;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        transform: translateX(-100%);
+        /* Initially move the element outside the viewport on the left */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* Set transition properties */
+    }
+
+    .depositWithdrawalSection h1.show {
+        opacity: 1;
+        /* Change opacity to 1 when the element is visible */
+        transform: translateX(0);
+        /* Move the element back to its original position */
+    }
+
+    .securitySection {
+        background-image: url("../images/fund-security-bg.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .securitySection h1 {
+        margin: 10% 5%;
+        font-size: 22px;
+        color: #fff;
+        width: 200px;
+    }
+
+    .securitypage h1 {
+        margin: 10% 10%;
+    }
+
+    .securitypage p {
+        margin: 10% 10%;
+    }
+
+    /* custom menu styles start */
+    .custom-menu {
+        display: none;
+    }
+
+    /* side nav menu styles start */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* z-index: -1; */
+        display: none;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    #mySidenav.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .sidenav .navbar-nav {
+        height: 100vh;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 10px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .menuArrow {
+        font-size: 18px;
+        padding-right: 20px;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        font-size: 36px;
+    }
+
+    .sidenav .lang-btn {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        font-size: 36px;
+        /* margin-left: -5px; */
+    }
+
+    .lang-btn .dropdown-menu {
+        position: absolute;
+        left: 0px;
+        z-index: 101;
+    }
+
+
+    /* auth nav menu styles start */
+    .authsidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* z-index: -1; */
+        display: none;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    #authSidenav.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    #authRegisterResponsive.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .authsidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .authsidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .authsidenav .authClosebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .authsidenav .lang-btn {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        font-size: 36px;
+        /* margin-left: -5px; */
+    }
+
+    .loginForm {
+        padding: 0;
+    }
+
+    .authsidenav img {
+        width: 50%;
+    }
+
+    .authsidenav p>a {
+        font-size: 16px;
+    }
+
+    .signup-link {
+        font-size: 16px;
+        color: #f1f1f1;
+    }
+
+    #signup-btn {
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .pcAuthLoginBtn {
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .carousel-caption>h5,
+    .carousel-caption>p {
+        display: block;
+    }
+
+    #pcLoginSideNav {
+        display: none;
+        ;
+    }
+
+    #pcRegisterSideNav {
+        display: none;
+        ;
+    }
+
+    .box-item {
+        margin-bottom: 20px;
+    }
+
+    .midCard {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .midCard-body img {
+        width: 30%;
+    }
+
+    .support-button {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .support-button a:hover img {
+        /* Add your image zoom styles here */
+        transform: scale(1.2);
+        /* You can adjust the scale value as needed */
+        transition: transform 0.3s ease;
+        /* Add a smooth transition effect */
+    }
+
+    /* ############ custom card design css start################# */
+
+    .text-center {
+        text-align: center;
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .card-container {
+        background-color: var(--section-bg-color);
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-item {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        min-height: 420px;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flipboxIcon {
+        font-size: 60px;
+    }
+
+    .flipbox-bg {
+        background-image: url("../images/depositCard.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        /* padding: 60px; */
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+        top: 50%;
+    }
+
+    .flip-box-header {
+        font-size: 32px;
+    }
+
+    .flip-box p {
+        font-size: 18px;
+        line-height: 1.4em;
+        text-transform: capitalize;
+    }
+
+    .flip-box-img {
+        margin-top: 25px;
+    }
+
+    /*########## Account Types  start ##########*/
+    .standardAccount {
+        background-image: url("../images/standard-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .premiumAccount {
+        background-image: url("../images/premium-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .vipAccount {
+        background-image: url("../images/vip-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .standardAccount h1,
+    .premiumAccount h1 {
+        margin: 15% auto;
+        font-size: 36px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .standardAccount h1.show,
+    .premiumAccount h1.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .accountFeatures {
+        padding: 60px 40px 40px 60px;
+    }
+
+    .demoAccount {
+        width: 100%;
+        min-height: 60vh;
+        background: url("../images/demo account mobile header1.webp") top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .demoSection {
+        padding: 5% 5% 5% 5%;
+    }
+
+    .demoContent .platform-btn {
+        margin: 5% auto;
+    }
+
+    .demoContent {
+        background-color: var(--theme-bg-color);
+    }
+
+    .demoSection {
+        padding: 5% 5% 5% 5%;
+    }
+
+    .demoStepper {
+        padding: 50px 20px 50px 20px;
+    }
+
+    .demoStepper h5 {
+        color: var(--platform-btn-color);
+    }
+
+    .demoStepper .icon {
+        font-size: 72px;
+    }
+
+    .demoProcess {
+        background-color: var(--theme-bg-color);
+    }
+    .demoProcess ol li a {
+        color: var(--platform-btn-color);
+    }
+    .demoProcess ol li a:hover {
+        font-weight: bold;
+        color: rgb(42, 231, 42);
+    }
+
+    /*########## Account Types  end ##########*/
+
+    .contactUs {
+        padding: 60px 60px 60px 60px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .contactform {
+        border-radius: 10px 10px 10px 10px;
+        padding: 20px;
+        box-shadow: rgb(204, 219, 232) 0px 0px 40px 3px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .privacyPolicyHeader {
+        background-image: url("../images/privacy-policy-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .privacyPolicyHeader h1 {
+        margin: 10% 0% 10% 33%;
+        font-size: 36px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .privacyPolicyHeader h1.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .privacyContent {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .privacyContent ul {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .privacyPolicy {
+        overflow: hidden;
+    }
+
+    .privacyPolicy>h1,
+    .privacyPolicy>p,
+    .privacyPolicy>ul,
+    .privacyPolicy>h4 {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .animate {
+        animation: fadeInRight 1s forwards;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Forex tools*/
+    .forexTools {
+        background-image: url("../images/forex-tools-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .forexTools h1 {
+        margin: 10% 0% 10% 50%;
+        font-size: 36px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .forexTools h1.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .marginCalculator {
+        background-color: var(--section-bg-color);
+    }
+
+    .profitCalculator {
+        background-color: var(--theme-bg-color);
+    }
+
+    .technicalTools {
+        background-color: var(--section-bg-color);
+    }
+
+    .indicators {
+        background-color: var(--theme-bg-color);
+    }
+
+    .indicators h3 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .forex-market {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .aboutUs {
+        background-color: var(--theme-bg-color);
+        padding: 10% 0% 5% 0%
+    }
+
+    .aboutUs h1 {
+        font-size: 36px;
+        margin-bottom:20px;
+    }
+
+    .aboutUs p {
+        font-size: 18px;
+        margin: auto 5%;
+        text-align:justify;
+    }
+
+}
+
+
+/*###################### tablet device #####################################*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+    .menuBtn {
+        background-color: #F5D20E;
+        padding: 0px 15px 0px 15px;
+        /*top right bottom left*/
+        line-height: 1.4em;
+        font-size: 32px;
+        border-radius: 20px 5px 20px 5px;
+        transform: skewX(-15deg);
+        margin-left: 50px;
+    }
+
+    /*Slider iamge section*/
+    .myCarrowselSlider {
+        width: 100%;
+        min-height: 480px;
+        background: url("../images/sliders/slider-bg3.webp") top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .myCarrowselSlider h1 {
+        margin: 10% 0% 0% 0%;
+        font-size: 60px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .myCarrowselSlider h3 {
+        margin: 10% 25% 10% 25%;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .myCarrowselSlider h1.show,
+    .myCarrowselSlider h3.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .myCarrowselSlider img {
+        width: 100%;
+    }
+
+    .authMenuBtn .autIcon {
+        font-size: 40px;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #fff;
+    }
+
+    /* custom menu styles start */
+    .custom-menu {
+        display: none;
+    }
+
+    /* side nav menu styles start */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+
+    /* side nav menu styles start */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* z-index: -1; */
+        display: none;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    #mySidenav.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .sidenav .navbar-nav {
+        height: 100vh;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .menuArrow {
+        font-size: 24px;
+        padding-right: 30px;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 48px;
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .sidenav .lang-btn {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+
+    .lang-btn .dropdown-menu {
+        position: absolute;
+        left: 0px;
+        z-index: 101;
+    }
+
+    /* auth nav menu styles start */
+    .authsidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* z-index: -1; */
+        display: none;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    #authSidenav.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    #authRegisterResponsive.menu-open {
+        display: block;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .authsidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .authsidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .authsidenav .authClosebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .authsidenav .lang-btn {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        font-size: 36px;
+        /* margin-left: -5px; */
+    }
+
+    .loginForm {
+        padding: 0;
+    }
+
+    .authsidenav img {
+        width: 50%;
+    }
+
+    .authsidenav p>a {
+        font-size: 16px;
+    }
+
+    .signup-link {
+        font-size: 16px;
+        color: #f1f1f1;
+    }
+
+    #signup-btn {
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .pcAuthLoginBtn {
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .carousel-caption>h5,
+    .carousel-caption>p {
+        display: block;
+    }
+
+    .midFooterCardSection .card>.card-body>p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 10;
+        /* Adjust the number of lines to show */
+
+    }
+
+    #pcLoginSideNav {
+        display: none;
+    }
+
+    #pcRegisterSideNav {
+        display: none;
+    }
+
+    .box-item {
+        margin-bottom: 20px;
+    }
+
+    .midCard {
+        padding: 0px;
+    }
+
+    .midCard-body img {
+        width: 25%;
+    }
+
+    .midCard-header {
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+    }
+
+    .support-button {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .support-button a:hover img {
+        /* Add your image zoom styles here */
+        transform: scale(1.2);
+        /* You can adjust the scale value as needed */
+        transition: transform 0.3s ease;
+        /* Add a smooth transition effect */
+    }
+
+    .depositWithdrawalSection {
+        background-image: url("../images/deposit-withdrawal.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .depositWithdrawalSection h1 {
+        margin: 10% 0% 10% 40%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        transform: translateX(-100%);
+        /* Initially move the element outside the viewport on the left */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* Set transition properties */
+    }
+
+    .depositWithdrawalSection h1.show {
+        opacity: 1;
+        /* Change opacity to 1 when the element is visible */
+        transform: translateX(0);
+        /* Move the element back to its original position */
+    }
+
+    .securitySection {
+        background-image: url("../images/fund-security-bg.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .securitySection h1 {
+        margin: 10% 5%;
+        font-size: 48;
+        color: #fff;
+    }
+
+    .securitypage h1 {
+        margin: 10% 10%;
+    }
+
+    .securitypage p {
+        margin: 10% 10%;
+    }
+
+
+    /* ############ custome card design css start################# */
+
+    .text-center {
+        text-align: center;
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .card-container {
+        background-color: var(--section-bg-color);
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-item {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        min-height: 475px;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flipbox-bg {
+        background-image: url("../images/depositCard.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .flipboxIcon {
+        font-size: 60px;
+    }
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        /* padding: 60px; */
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+        top: 50%;
+    }
+
+    .flip-box-header {
+        font-size: 48px;
+    }
+
+    .flip-box p {
+        font-size: 28px;
+        line-height: 1.4em;
+        text-transform: capitalize;
+    }
+
+    .flip-box-img {
+        margin-top: 25px;
+    }
+
+    /*########## Account Types  start ##########*/
+    .standardAccount {
+        background-image: url("../images/deposit-withdrawal.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .premiumAccount {
+        background-image: url("../images/premium-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .vipAccount {
+        background-image: url("../images/vip-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .standardAccount h1,
+    .premiumAccount h1,
+    .vipAccount h1 {
+        margin: 10% 0% 10% 55%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .standardAccount h1.show,
+    .premiumAccount h1.show,
+    .vipAccount h1.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .accountFeatures {
+        padding: 60px 40px 40px 60px;
+    }
+
+    .demoAccount {
+        width: 100%;
+        min-height: 480px;
+        background: url("../images/demo account header.webp");
+        background-size: cover;
+        position: relative;
+    }
+
+    .demoContent {
+        background-color: var(--theme-bg-color);
+    }
+
+    .demoSection {
+        padding: 2% 5% 0% 5%;
+    }
+
+    .demoContent .platform-btn {
+        margin: 2% auto;
+    }
+
+    .demoStepper {
+        padding: 50px 20px 50px 20px;
+    }
+
+    .demoStepper h5 {
+        color: var(--platform-btn-color);
+    }
+
+    .demoStepper .icon {
+        font-size: 72px;
+    }
+
+    .demoProcess {
+        background-color: var(--theme-bg-color);
+    }
+    .demoProcess ol li a {
+        color: var(--platform-btn-color);
+    }
+    .demoProcess ol li a:hover {
+        font-weight: bold;
+        color: rgb(42, 231, 42);
+    }
+
+    /*########## Account Types  end ##########*/
+
+    .contactUs {
+        padding: 60px 60px 60px 60px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .contactform {
+        border-radius: 10px 10px 10px 10px;
+        padding: 20px;
+        box-shadow: rgb(204, 219, 232) 0px 0px 40px 3px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .privacyPolicyHeader {
+        background-image: url("../images/privacy-policy-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .privacyPolicyHeader h1 {
+        margin: 10% 0% 10% 66%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        transform: translateX(-100%);
+        /* Initially move the element outside the viewport on the left */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* Set transition properties */
+    }
+
+    .privacyPolicyHeader h1.show {
+        opacity: 1;
+        /* Change opacity to 1 when the element is visible */
+        transform: translateX(0);
+        /* Move the element back to its original position */
+    }
+
+    .privacyContent {
+        margin: 40px 100px 40px 100px;
+    }
+
+    .privacyContent ul {
+        margin: 20px 50px 20px 50px;
+    }
+
+    .privacyPolicy {
+        overflow: hidden;
+    }
+
+    .privacyPolicy>h1,
+    .privacyPolicy>p,
+    .privacyPolicy>ul,
+    .privacyPolicy>h4 {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .animate {
+        animation: fadeInRight 1s forwards;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Forex tools*/
+    .forexTools {
+        background-image: url("../images/forex-tools-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .forexTools h1 {
+        margin: 10% 0% 10% 66%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .forexTools h1.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .marginCalculator {
+        background-color: var(--section-bg-color);
+    }
+
+    .profitCalculator {
+        background-color: var(--theme-bg-color);
+    }
+
+    .technicalTools {
+        background-color: var(--section-bg-color);
+    }
+
+    .marginCalculator p,
+    .profitCalculator p,
+    .technicalTools p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+    }
+
+    .indicators {
+        background-color: var(--theme-bg-color);
+    }
+
+    .indicators h3 {
+        font-size: 22px;
+    }
+
+    .aboutUs {
+        background-color: var(--theme-bg-color);
+        padding: 5% 0% 5% 0%
+    }
+
+    .aboutUs h1 {
+        font-size: 60px;
+    }
+
+    .aboutUs p {
+        font-size: 18px;
+        margin: auto 10%;
+        text-align: justify;
+    }
+}
+
+
+/*###################### Large device #####################################*/
+@media only screen and (min-width: 1025px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #fff;
+    }
+
+    .theme-bg-color {
+        background-color: var(--theme-bg-color);
+    }
+
+    .submenu-bg {
+        background-color: var(--section-bg-color);
+        color: #fff;
+    }
+
+    .responsive-menu {
+        display: none;
+    }
+
+    /* custom menu */
+
+    .theme-bg-color {
+        background-color: var(--theme-bg-color);
+    }
+
+    .submenu-bg {
+        background-color: var(--section-bg-color);
+        color: #fff;
+    }
+
+    .logo {
+        padding-top: 5px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+    }
+
+    nav ul li:hover {
+        background-color: var(--section-bg-color);
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li span {
+        color: #fff;
+    }
+
+    nav ul li span:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+
+    .fa-chevron-double-right {
+        color: var(--platform-btn-color);
+    }
+
+    .menu-items {
+        border-top: 0.5px solid var(--platform-btn-color);
+    }
+
+    .menu-list strong {
+        color: var(--platform-btn-color);
+        margin-top: 20px;
+        font-size: 18px;
+        border-bottom: 0.5px solid var(--platform-btn-color);
+    }
+
+    .menu-data {
+        padding: 10px 10px 10px 120px;
+    }
+
+    .menu-list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu-list ul li {
+        display: block;
+        margin-bottom: 10px;
+        /* Add margin between list items */
+    }
+
+    .menu-list ul li a {
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lang-btn .dropdown-menu {
+        position: relative;
+        right: 50px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .menu-data ul li a:hover {
+        color: var(--platform-btn-color);
+    }
+
+    nav ul li:hover {
+        background-color: var(--section-bg-color);
+    }
+
+    .menu-items {
+        border-top: 0.5px solid var(--platform-btn-color);
+    }
+
+
+
+    /*Slider iamge section*/
+    .myCarrowselSlider {
+        width: 100%;
+        min-height: 480px;
+        background: url("../images/sliders/slider-bg3.webp") top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .myCarrowselSlider h1 {
+        margin: 5% 0% 0% 0%;
+        font-size: 60px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .myCarrowselSlider h3 {
+        margin: 5% 25% 10% 25%;
+        /* font-size: 60px; */
+        color: #fff;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .myCarrowselSlider h1.show,
+    .myCarrowselSlider h3.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .myCarrowselSlider img {
+        width: 100%;
+    }
+
+    /* ########### ########### PC Auth Side-nav start ########### ###########  */
+    .pcLoginSideNav,
+    .pcRegisterSideNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        display: none;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+    .pcLoginSideNav.menu-open,
+    .pcRegisterSideNav.menu-open {
+        display: block;
+        width: 33%;
+        z-index: 1000;
+    }
+
+    .pcLoginSideNav a,
+    .pcRegisterSideNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .pcLoginSideNav a:hover,
+    .pcRegisterSideNav a:hover {
+        color: #f1f1f1;
+    }
+
+    .pcLoginSideNav>.pcAuthClosebtn,
+    .pcRegisterSideNav>.pcAuthClosebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .pcLoginSideNav>.lang-btn,
+    .pcRegisterSideNav>.lang-btn {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        font-size: 36px;
+        /* margin-left: -5px; */
+    }
+
+    .pcLoginSideNav img,
+    .pcRegisterSideNav img {
+        width: 50%;
+    }
+
+    .pcLoginSideNav p>a,
+    .pcRegisterSideNav p>a {
+        font-size: 16px;
+    }
+
+    .loginForm {
+        padding: 0;
+    }
+
+    .signup-link {
+        font-size: 16px;
+        color: #f1f1f1;
+    }
+
+    #signup-btn {
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .signup-link>.pcAuthLoginBtn {
+        cursor: pointer;
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .signup-link>.switchSignUp {
+        cursor: pointer;
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .signup-link>.switchLogin {
+        cursor: pointer;
+        font-size: 17px;
+        color: var(--platform-btn-color);
+    }
+
+    .depositWithdrawalSection {
+        background-image: url("../images/deposit-withdrawal.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .depositWithdrawalSection h1 {
+        margin: 10% 1% 10% 55%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        transform: translateX(-100%);
+        /* Initially move the element outside the viewport on the left */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* Set transition properties */
+    }
+
+    .depositWithdrawalSection h1.show {
+        opacity: 1;
+        /* Change opacity to 1 when the element is visible */
+        transform: translateX(0);
+        /* Move the element back to its original position */
+    }
+
+    .securitySection {
+        background-image: url("../images/fund-security-bg.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .securitySection h1 {
+        margin: 10% auto;
+        font-size: 62px;
+        color: #fff;
+    }
+
+    .securitypage h1 {
+        margin: auto 10%;
+    }
+
+    .securitypage h1 {
+        margin: auto 0%;
+    }
+
+
+
+    /* ############ custome card design css start################# */
+
+    .text-center {
+        text-align: center;
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .card-container {
+        background-color: var(--section-bg-color);
+    }
+
+    .box-container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-item {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    .flip-box {
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        min-height: 475px;
+        -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flipbox-bg {
+        background-image: url("../images/depositCard.webp");
+        /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+        background-size: cover;
+        /* Adjust this property based on how you want the background image to be sized */
+        background-position: center;
+        /* Adjust this property to position the background image */
+        background-repeat: no-repeat;
+        /* This ensures that the background image is not repeated */
+        /* Add any other styles you need for the section */
+    }
+
+    .flipboxIcon {
+        font-size: 60px;
+    }
+
+    .flip-box-front {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-front {
+        -ms-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        -ms-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-back {
+        -ms-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .flip-box .inner {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        /* padding: 60px; */
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+        perspective: inherit;
+        z-index: 2;
+
+        transform: translateY(-50%) translateZ(60px) scale(.94);
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+        -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+        top: 50%;
+    }
+
+    .flip-box-header {
+        font-size: 48px;
+    }
+
+    .flip-box p {
+        font-size: 28px;
+        line-height: 1.4em;
+        text-transform: capitalize;
+    }
+
+    .flip-box-img {
+        margin-top: 25px;
+    }
+
+    /* ##############  Mid card design start ############ */
+
+    .midCard {
+        display: block;
+        padding: 0px;
+    }
+
+    .midCard-body img {
+        width: 25%;
+    }
+
+    .midCard-header {
+        width: 100%;
+        /* padding: 5px 0px 5px 0px; */
+        text-align: center;
+    }
+
+    .support-button {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .support-button a:hover img {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+
+    /*################ Account types Start ###############*/
+    .standardAccount {
+        background-image: url("../images/standard-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .premiumAccount {
+        background-image: url("../images/premium-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .vipAccount {
+        background-image: url("../images/vip-account-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .standardAccount h1,
+    .premiumAccount h1,
+    .vipAccount h1 {
+        margin: 10% 0% 10% 66%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        transform: translateX(-100%);
+        /* Initially move the element outside the viewport on the left */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* Set transition properties */
+    }
+
+    .standardAccount h1.show,
+    .premiumAccount h1.show,
+    .vipAccount h1.show {
+        opacity: 1;
+        /* Change opacity to 1 when the element is visible */
+        transform: translateX(0);
+        /* Move the element back to its original position */
+    }
+
+    .accountFeatures {
+        padding: 60px 40px 40px 60px;
+    }
+
+    .demoAccount {
+        width: 100%;
+        min-height: 480px;
+        background: url("../images/demo account header.webp");
+        background-size: cover;
+        position: relative;
+    }
+
+    .demoContent {
+        background-color: var(--theme-bg-color);
+    }
+
+    .demoSection {
+        padding: 2% 5% 0% 5%;
+    }
+
+    .demoContent .platform-btn {
+        margin: 2% auto;
+    }
+
+    .demoStepper {
+        padding: 50px 20px 50px 20px;
+    }
+
+    .demoStepper h5 {
+        color: var(--platform-btn-color);
+    }
+
+    .demoStepper .icon {
+        font-size: 72px;
+    }
+
+    .demoProcess {
+        background-color: var(--theme-bg-color);
+    }
+    .demoProcess ol li a {
+        color: var(--platform-btn-color);
+    }
+    .demoProcess ol li a:hover {
+        font-weight: bold;
+        color: rgb(42, 231, 42);
+    }
+
+    /*########## Account Types  end ##########*/
+
+    .contactUs {
+        padding: 60px 60px 60px 60px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .contactform {
+        border-radius: 10px 10px 10px 10px;
+        padding: 20px;
+        box-shadow: rgb(204, 219, 232) 0px 0px 40px 3px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .privacyPolicyHeader {
+        background-image: url("../images/privacy-policy-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .privacyPolicyHeader h1 {
+        margin: 10% 0% 10% 66%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        transform: translateX(-100%);
+        /* Initially move the element outside the viewport on the left */
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        /* Set transition properties */
+    }
+
+    .privacyPolicyHeader h1.show {
+        opacity: 1;
+        /* Change opacity to 1 when the element is visible */
+        transform: translateX(0);
+        /* Move the element back to its original position */
+    }
+
+    .privacyContent {
+        margin: 40px 100px 40px 100px;
+    }
+
+    .privacyContent ul {
+        margin: 20px 50px 20px 50px;
+    }
+
+    .privacyPolicy {
+        overflow: hidden;
+    }
+
+    .privacyPolicy>h1,
+    .privacyPolicy>p,
+    .privacyPolicy>ul,
+    .privacyPolicy>h4 {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .animate {
+        animation: fadeInRight 1s forwards;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Forex tools*/
+    .forexTools {
+        background-image: url("../images/forex-tools-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .forexTools h1 {
+        margin: 10% 0% 10% 66%;
+        font-size: 50px;
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .forexTools h1.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .marginCalculator {
+        background-color: var(--section-bg-color);
+    }
+
+    .profitCalculator {
+        background-color: var(--theme-bg-color);
+    }
+
+    .technicalTools {
+        background-color: var(--section-bg-color);
+    }
+
+    .indicators {
+        background-color: var(--theme-bg-color);
+    }
+
+    .aboutUs {
+        background-color: var(--theme-bg-color);
+        padding: 5% 0% 5% 0%
+    }
+
+    .aboutUs h1 {
+        font-size: 60px;
+    }
+
+    .aboutUs p {
+        font-size: 18px;
+        margin: auto 10%;
+        text-align:justify
+    }
+
+}

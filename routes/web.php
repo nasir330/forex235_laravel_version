@@ -126,6 +126,28 @@ Route::get('/profit-calculator', function () {
     return view('pages.tools.profitCalculator');
 })->name('profit.calculator');
 
+//AI robot
+Route::get('/forex-tools-ai-robot', function () {
+    return view('pages.tools.aiRobot');
+})->name('tools.aiRobot');
+//AI robot currency shop
+Route::get('/forex-tools-ai-robot-shop-currency', function () {
+    return view('pages.checkout.shopCurrency');
+})->name('aiRobot.shopCurency');
+//AI robot gold shop
+Route::get('/forex-tools-ai-robot-shop-gold', function () {
+    return view('pages.checkout.shopGold');
+})->name('aiRobot.shopGold');
+//AI robot crypto shop
+Route::get('/forex-tools-ai-robot-shop-crypto', function () {
+    return view('pages.checkout.shopCrypto');
+})->name('aiRobot.shopCrypto');
+//AI robot checkout
+Route::get('/forex-tools-ai-robot-shop-checkout', function () {
+    return view('pages.checkout.checkout');
+})->name('aiRobot.checkout');
+
+
 
 //Account Types
 Route::get('/account-types', function () {
@@ -147,6 +169,7 @@ Route::get('/vip-account', function () {
 Route::get('/demo-account', function () {
     return view('pages.accounts.demo');
 })->name('account.demo');
+
 
 
 

@@ -350,14 +350,14 @@
             <div class="card-body bg-transparent">
                 <form action="" class="loginForm">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput"
+                        <input type="email" class="form-control"
                             placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <label>Email address</label>
                     </div>
                     <div class="form-floating mb-1">
-                        <input type="password" class="form-control" id="floatingPassword"
+                        <input type="password" class="form-control"
                             placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <label>Password</label>
                     </div>
                     <div class="col text-center">
                         <p>
@@ -389,14 +389,14 @@
             <div class="card-body bg-transparent">
                 <form action="" class="loginForm registerform">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput"
+                        <input type="email" class="form-control" 
                             placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <label>Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword"
+                        <input type="password" class="form-control"
                             placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <label>Password</label>
                     </div>
 
                     <div class="col-6 text-center mx-auto mb-3">

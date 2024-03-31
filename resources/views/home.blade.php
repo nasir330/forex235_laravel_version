@@ -31,8 +31,8 @@
 
 <!-- modal start -->
     <section>
-        @include('templates.modal.loginmodal') 
-        @include('templates.modal.registermodal') 
+        @include('templates.modal.robotModal') 
+      
     </section>
 <!-- modal end -->
 

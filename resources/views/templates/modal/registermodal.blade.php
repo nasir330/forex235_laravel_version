@@ -11,14 +11,14 @@
             <div class="modal-body">
                 <form action="" class="loginForm">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput"
+                        <input type="email" class="form-control"
                             placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <label>Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword"
+                        <input type="password" class="form-control"
                             placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <label>Password</label>
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto mb-3">
                         <button class="btn btn-primary form-control" type="button">Register</button>

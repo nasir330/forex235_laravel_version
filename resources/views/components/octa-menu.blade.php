@@ -255,6 +255,7 @@
                     <ul>
                         <li><a href="{{route('education.newToForex')}}">New To Forex ? </a></li>
                         <li><a href="{{route('education.learnForex')}}">Learn Forex Trading </a></li>
+                        <li><a href="{{route('education.learnForex')}}">E-Book </a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3 text-center">

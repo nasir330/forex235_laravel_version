@@ -37,8 +37,8 @@
                                         <input type="text" class="form-control" id="lastName"
                                             placeholder="Enter last name" required>
                                     </div>
-                                </div>                               
-                             
+                                </div>
+
                                 <div class="col-md-6">
                                     <label for="state" class="form-label mb-1">State</label>
                                     <strong class="text-danger">*</strong>
@@ -47,7 +47,7 @@
                                             placeholder="Enter State" required>
                                     </div>
                                 </div>
-                              
+
                                 <div class="col-md-6">
                                     <label for="country" class="form-label mb-1">Country</label>
                                     <strong class="text-danger">*</strong>
@@ -85,37 +85,38 @@
             <div class="row mb-3">
                 <div class="col-md-12 card px-4">
                     <div class="col-md-6 card card-header">
-                    <h3>Order detils</h3>
-                   </div>
-                   <div class="col-md-12">
-                    <table class="table table-secondary table-striped table-bordered text-center">
-                        <thead>
-                            <tr>
-                                <th>Product Details</th>
-                                <th>Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>                            
-                            <tr>
-                                <td style="width:40%;">TRADING ROBOT FOREX <span class="text-warning">*</span> <strong>1</strong></td>
-                                <td>$499.00 </td>
-                            </tr>
-                            <tr>
-                                <td style="width:40%;">Subtotal</td>
-                                <td>$499.00 </td>
-                            </tr>
-                            <tr>
-                                <td style="width:40%;">Total</td>
-                                <td><strong>$499.00</strong> </td>
-                            </tr>
-                           
-                           
-                           
-                           
-                        </tbody>
-                    </table>
+                        <h3>Order detils</h3>
+                    </div>
+                    <div class="col-md-12 tableItems">
+                        <table class="table table-secondary table-striped table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>Product Details</th>
+                                    <th>Rate</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="width:40%;">TRADING ROBOT FOREX <span class="text-warning">*</span>
+                                        <strong>1</strong></td>
+                                    <td>$499.00 </td>
+                                    <td>1 </td>
+                                    <td>$499.00 </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="width:40%; text-align:right">Subtotal</td>
+                                    <td>$499.00 </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="width:40%; text-align:right">Total</td>
+                                    <td><strong>$499.00</strong> </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                   </div>
+                    </div>
                 </div>
                 <!--payment methdo section start-->
                 @include('pages.checkout.paymentMethod')

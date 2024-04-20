@@ -2,11 +2,13 @@
 
 <body>
     <x-octa-menu />
-     <!-- marquee start -->
-     <div class="row">
+    <!-- marquee start -->
+    <div class="row">
         <div class="marqueeSection col-md-12">
             <marquee direction="left">
-                We are working hard to meet our deadlines. Our team is dedicated and motivated to achieve our goals. We have a clear plan and are making progress every day. Our efforts are paying off, and we are seeing positive results. We will continue to work diligently to ensure success.
+                We are working hard to meet our deadlines. Our team is dedicated and motivated to achieve our goals. We
+                have a clear plan and are making progress every day. Our efforts are paying off, and we are seeing
+                positive results. We will continue to work diligently to ensure success.
             </marquee>
         </div>
     </div>
@@ -18,11 +20,14 @@
             <div class="col-md-8 border text-center p-4">
                 <h2 class="border-bottom">Trading Crypto</h1>
                     <p class="forex-market">
-                        Trading crypto with <strong>Forex 235</strong> has gained significant popularity due to the allure of high
+                        Trading crypto with <strong>Forex 235</strong> has gained significant popularity due to the
+                        allure of high
                         profits and the volatile nature of the crypto market. However, it is crucial to comprehend the
                         inherent risks and approach crypto trading with caution. Leveraging trades is a notable
-                        advantage when trading crypto with <strong>Forex 235</strong>, enabling control of larger positions with a
-                        smaller capital outlay. Moreover, <strong>Forex 235</strong> offers a range of tools and indicators that aid in
+                        advantage when trading crypto with <strong>Forex 235</strong>, enabling control of larger
+                        positions with a
+                        smaller capital outlay. Moreover, <strong>Forex 235</strong> offers a range of tools and
+                        indicators that aid in
                         making informed trading decisions. These tools can assist in analyzing market trends,
                         identifying potential entry and exit points, and managing risk effectively. Nonetheless, it is
                         vital to remember that crypto trading involves substantial risk, including potential losses.
@@ -56,42 +61,49 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>BTCUSD</td>
-                                    <td>Bitcoin <strong class="text-danger">VS</strong> US Dollar</td>
-                                    <td>24/7</td>
-                                    <td>24/7</td>
-                                </tr>
-                                <tr>
                                     <td>BTCEUR</td>
                                     <td>Bitcoin <strong class="text-danger">VS</strong> Euro</td>
                                     <td>24/7</td>
                                     <td>24/7</td>
                                 </tr>
                                 <tr>
-                                    <td>LTCUSD</td>
-                                    <td>Litecoin <strong class="text-danger">VS</strong> US Dollar</td>
+                                    <td>BTCJPY</td>
+                                    <td>Bitcoin <strong class="text-danger">VS</strong> Japanese Yen</td>
+                                    <td>24/7</td>
+                                    <td>24/7</td>
+                                </tr>
+                                <tr>
+                                    <td>BTCUSD</td>
+                                    <td>Bitcoin <strong class="text-danger">VS</strong> US Dollar</td>
                                     <td>24/7</td>
                                     <td>24/7</td>
                                 </tr>
                                 <tr>
                                     <td>ETHUSD</td>
-                                    <td>Ethereum <strong class="text-danger">VS</strong> US Dollar</td>
+                                    <td>Ethereum</td>
+                                    <td>24/7</td>
+                                    <td>24/7</td>
+                                </tr>
+                                <tr>
+                                    <td>LTCUSD</td>
+                                    <td>Litecoin</td>
                                     <td>24/7</td>
                                     <td>24/7</td>
                                 </tr>
                                 <tr>
                                     <td>XRPUSD</td>
-                                    <td>Ripple <strong class="text-danger">VS</strong> US Dollar</td>
+                                    <td>Ripple (10,000)</td>
                                     <td>24/7</td>
                                     <td>24/7</td>
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- forex market  end -->
 
     <!-- mid footer start -->

@@ -803,7 +803,9 @@
         text-align: center;
     }
 
-
+    .tableItems{
+        overflow-x: auto;
+    }
 }
 
 
@@ -1716,7 +1718,7 @@
     }
 
     .menu-data {
-        padding: 10px 10px 10px 120px;
+        padding: 10px 10px 10px 100px;
     }
 
     .menu-list ul {

@@ -56,35 +56,48 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>XAUUSD</td>
-                                    <td>Gold Spot <strong class="text-danger">VS</strong> US Dollar</td>
-                                    <td>Monday | 5:00</td>
-                                    <td>Friday | 23:59</td>
-                                </tr>
-                                <tr>
-                                    <td>XAUEUR</td>
-                                    <td>Gold Spot <strong class="text-danger">VS</strong> Euro</td>
-                                    <td>Monday | 5:00</td>
-                                    <td>Friday | 23:59</td>
-                                </tr>
-                                <tr>
-                                    <td>OILUSD</td>
-                                    <td>Crude Oil <strong class="text-danger">VS</strong> Us Dollar</td>
+                                    <td>XAGEUR</td>
+                                    <td>Silver <strong class="text-danger">VS</strong> Euro / Spot</td>
                                     <td>Monday | 5:00</td>
                                     <td>Friday | 23:59</td>
                                 </tr>
                                 <tr>
                                     <td>XAGUSD</td>
-                                    <td>Silver <strong class="text-danger">VS</strong> US Dollar</td>
+                                    <td>Silver</td>
                                     <td>Monday | 5:00</td>
                                     <td>Friday | 23:59</td>
                                 </tr>
                                 <tr>
-                                    <td>XAGEUR</td>
-                                    <td>Silver <strong class="text-danger">VS</strong> Euro</td>
+                                    <td>XAUEUR</td>
+                                    <td>Gold <strong class="text-danger">VS</strong> Euro / Spot</td>
                                     <td>Monday | 5:00</td>
                                     <td>Friday | 23:59</td>
                                 </tr>
+                                <tr>
+                                    <td>XAUUSD</td>
+                                    <td>Gold</td>
+                                    <td>Monday | 5:00</td>
+                                    <td>Friday | 23:59</td>
+                                </tr>
+                                <tr>
+                                    <td>XPDUSD</td>
+                                    <td>Palladium</td>
+                                    <td>Monday | 5:00</td>
+                                    <td>Friday | 23:59</td>
+                                </tr>
+                                <tr>
+                                    <td>XPTUSD</td>
+                                    <td>Platinum</td>
+                                    <td>Monday | 5:00</td>
+                                    <td>Friday | 23:59</td>
+                                </tr>
+                                <tr>
+                                    <td>Oilusd</td>
+                                    <td>OIL <strong class="text-danger">VS</strong> United States Dollar</td>
+                                    <td>Monday | 5:00</td>
+                                    <td>Friday | 23:59</td>
+                                </tr>                                
+                                
                             </tbody>
                         </table>
                     </div>

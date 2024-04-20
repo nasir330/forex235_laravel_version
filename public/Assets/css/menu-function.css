@@ -260,6 +260,27 @@
         margin-bottom: 10px;
         /* Add margin between list items */
     }
+    
+
+
+    .menu-data ul li span{
+      font-size: 11px;
+      color:var(--platform-btn-color);
+    }
+    .menu-data ul li span em{
+       color:white;
+       font-weight: 300;
+    }
+    .menu-data ul li a:hover{
+      em{
+        color:red;
+      }
+      span{
+        color:white;
+      }
+    }
+
+   
     .menu-data ul li a {
         color: #fff;
     }

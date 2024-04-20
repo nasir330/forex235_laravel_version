@@ -43,24 +43,24 @@
                     <ul>
                         <li id="homeMenu" class="px-3">
                             <span>
-                                <a href="{{route('home')}}">Home</a>
+                                <a href="{{ route('home') }}">Home</a>
                             </span>
-                          
+
                         </li>
                         <li id="tradingMenu" class="px-3">
-                           <span>Trading</span>
+                            <span>Trading</span>
                         </li>
                         <li id="platformMenu" class="px-3">
-                           <span>Platforms</span>
+                            <span>Platforms</span>
                         </li>
                         <li id="marketsMenu" class="px-3">
-                           <span>Markets</span>
+                            <span>Markets</span>
                         </li>
                         <li id="newsAnalysisMenu" class="px-3">
-                           <span>News And Analysis</span>
+                            <span>News And Analysis</span>
                         </li>
                         <li id="educationMenu" class="px-3">
-                           <span>Tools & Education</span>
+                            <span>Tools & Education</span>
                         </li>
                     </ul>
                 </nav>
@@ -83,18 +83,18 @@
                         <li><a href="{{ route('deposit.withdrawal') }}">Deposits & Withdrawals</a></li>
                         <li><a href="{{ route('payment.optiions') }}">Payments Options</a></li>
                         <li><a href="{{ route('fund.security') }}">Funds Security</a></li>
-                        <li><a href="{{route('page.ib')}}" target="_blank">Partner Program</a></li>
-                        <li><a href="{{route('referal.program')}}">Referral Program</a></li>
+                        <li><a href="{{ route('page.ib') }}" target="_blank">Partner Program</a></li>
+                        <li><a href="{{ route('referal.program') }}">Referral Program</a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3">
                     <strong> Trading Conditions </strong>
                     <ul>
-                        <li><a href="{{route('account.types')}}">Account Types</a></li>
-                        <li><a href="{{route('account.standard')}}">Standard Account</a></li>
-                        <li><a href="{{route('account.premium')}}">Premium Account</a></li>
-                        <li><a href="{{route('account.vip')}}">VIP Account</a></li>
-                        <li><a href="{{route('account.demo')}}">Demo Account</a></li>                       
+                        <li><a href="{{ route('account.types') }}">Account Types</a></li>
+                        <li><a href="{{ route('account.standard') }}">Standard Account</a></li>
+                        <li><a href="{{ route('account.premium') }}">Premium Account</a></li>
+                        <li><a href="{{ route('account.vip') }}">VIP Account</a></li>
+                        <li><a href="{{ route('account.demo') }}">Demo Account</a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3">
@@ -146,11 +146,11 @@
                 <div class="menu-data col-3">
                     <strong> Forex</strong>
                     <ul>
-                        <li><a href="eurusd.html">EURUSD</a></li>
-                        <li><a href="#">GBPUSD</a></li>
-                        <li><a href="#">GBPJPY</a></li>
-                        <li><a href="audusd.html">AUDUSD</a></li>
-                        <li><a href="#">USDJPY</a></li>
+                        <li><a href="eurusd.html">EURUSD <span>Euro <em>VS</em> US Dollar</span></a> </li>
+                        <li><a href="#">GBPUSD <span>British Pound <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">GBPJPY <span>British Pound <em>VS</em> Japanese Yen</span></a></li>
+                        <li><a href="audusd.html">AUDUSD <span>Australian Dollar <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">USDJPY <span>US Dollar <em>VS</em> Japanese Yen</span></a></li>
                         <li class="text-capitalize">
                             <a href="{{ route('market.forex') }}">
                                 more <i class="fas fa-chevron-double-right"></i>
@@ -161,11 +161,12 @@
                 <div class="menu-data col-3">
                     <strong> Comodities</strong>
                     <ul>
-                        <li><a href="#">XAGEUR</a></li>
-                        <li><a href="#">XAGUSD</a></li>
-                        <li><a href="#">XAUEUR</a></li>
-                        <li><a href="xauusd.html">XAUUSD</a></li>
-                        <li><a href="#">OILUSD</a></li>
+                        <li><a href="#">XAGEUR <span>Silver <em>VS</em> Euro</span></a></li>
+                        <li><a href="#">XAGUSD <span>Silver <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">XAUEUR <span>Gold <em>VS</em> Euro</span></a></li>
+                        <li><a href="xauusd.html">XAUUSD <span>Gold <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">OILUSD <span>Oil <em>VS</em> US Dollar</span></a></li>
+
                         <li class="text-capitalize">
                             <a href="{{ route('market.commodities') }}">
                                 more <i class="fas fa-chevron-double-right"></i>
@@ -176,11 +177,12 @@
                 <div class="menu-data col-3">
                     <strong> CFD</strong>
                     <ul>
-                        <li><a href="#">#AAPL</a></li>
-                        <li><a href="#">UK.100</a></li>
-                        <li><a href="#">USA.30</a></li>
-                        <li><a href="#">UK.OIL</a></li>
-                        <li><a href="#">GER.30</a></li>
+                        <li><a href="#">#AAPL <span>Apple Inc.</span></a></li>
+                        <li><a href="#">UK.100 <span>UK 100 Index</span></a></li>
+                        <li><a href="#">USA.30 <span>US 30 Index</span></a></li>
+                        <li><a href="#">UK.OIL <span>UK Oil</span></a></li>
+                        <li><a href="#">GER.30 <span>Germany 30 Index</span></a></li>
+
                         <li class="text-capitalize">
                             <a href="{{ route('market.cfd') }}">
                                 more <i class="fas fa-chevron-double-right"></i>
@@ -191,11 +193,12 @@
                 <div class="menu-data col-3">
                     <strong> Crypto</strong>
                     <ul>
-                        <li><a href="#">BTCUSD</a></li>
-                        <li><a href="#">BTCEUR</a></li>
-                        <li><a href="#">LTCUSD</a></li>
-                        <li><a href="#">ETHUSD</a></li>
-                        <li><a href="#">XRPUSD</a></li>
+                        <li><a href="#">BTCUSD <span>Bitcoin <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">BTCEUR <span>Bitcoin <em>VS</em> Euro</span></a></li>
+                        <li><a href="#">LTCUSD <span>Litecoin <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">ETHUSD <span>Ethereum <em>VS</em> US Dollar</span></a></li>
+                        <li><a href="#">XRPUSD <span>Ripple <em>VS</em> US Dollar</span></a></li>
+
                         <li class="text-capitalize">
                             <a href="{{ route('market.crypto') }}">
                                 more <i class="fas fa-chevron-double-right"></i>
@@ -217,13 +220,13 @@
                 <div class="menu-data col-3">
                     <strong> Fundamental Analysis </strong>
                     <ul>
-                        <li><a href="{{route('economic.calender')}}">Economic Calender </a></li>
+                        <li><a href="{{ route('economic.calender') }}">Economic Calender </a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3">
                     <strong> News & Calender</strong>
                     <ul>
-                        <li><a href="{{route('holiday.calender')}}">Holiday Calender </a></li>
+                        <li><a href="{{ route('holiday.calender') }}">Holiday Calender </a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3 text-center">
@@ -236,16 +239,17 @@
                 <div class="menu-data col-3">
                     <strong> Trading Tools</strong>
                     <ul>
-                        <li><a href="{{route('forex.tools')}}">Forex Tools </a></li>
-                        <li><a href="{{route('forex.calculator')}}">Forex Calculator </a></li>
-                        <li><a href="{{route('profit.calculator')}}">Profit Calculator </a></li>
+                        <li><a href="{{ route('tools.aiRobot') }}">AI Robot </a></li>
+                        <li><a href="{{ route('forex.tools') }}">Forex Tools </a></li>
+                        <li><a href="{{ route('forex.calculator') }}">Forex Calculator </a></li>
+                        <li><a href="{{ route('profit.calculator') }}">Profit Calculator </a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3">
                     <strong> Education </strong>
                     <ul>
-                        <li><a href="{{route('education.forex')}}">What is Forex ? </a></li>
-                        <li><a href="{{route('education.become.trader')}}">Become a Trader</a></li>
+                        <li><a href="{{ route('education.forex') }}">What is Forex ? </a></li>
+                        <li><a href="{{ route('education.become.trader') }}">Become a Trader</a></li>
                         <li><a href="Assets/pdf/Candle Sticks Pattern.pdf" target="_blank">Learn Candlesticks</a></li>
 
                     </ul>
@@ -253,9 +257,9 @@
                 <div class="menu-data col-3">
                     <strong> Trading Guide's</strong>
                     <ul>
-                        <li><a href="{{route('education.newToForex')}}">New To Forex ? </a></li>
-                        <li><a href="{{route('education.learnForex')}}">Learn Forex Trading </a></li>
-                        <li><a href="{{route('education.learnForex')}}">E-Book </a></li>
+                        <li><a href="{{ route('education.newToForex') }}">New To Forex ? </a></li>
+                        <li><a href="{{ route('education.learnForex') }}">Learn Forex Trading </a></li>
+                        <li><a href="{{ route('education.learnForex') }}">E-Book </a></li>
                     </ul>
                 </div>
                 <div class="menu-data col-3 text-center">

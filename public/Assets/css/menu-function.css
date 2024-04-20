@@ -259,28 +259,31 @@
         display: block;
         margin-bottom: 10px;
         /* Add margin between list items */
+    }    
+
+    .menu-data ul li span {
+        display: inline-block;
+        font-size: 11px;
+        color: var(--platform-btn-color);
+        opacity: 0; 
+        transform: translateX(100%); 
+        transition: opacity 0.3s ease, transform 0.3s ease; 
     }
     
-
-
-    .menu-data ul li span{
-      font-size: 11px;
-      color:var(--platform-btn-color);
+    .menu-data ul li span em {
+        color: white;
+        font-weight: 300;
     }
-    .menu-data ul li span em{
-       color:white;
-       font-weight: 300;
+    
+    .menu-data ul li a:hover span {
+        opacity: 1; 
+        transform: translateX(0); 
     }
-    .menu-data ul li a:hover{
-      em{
-        color:red;
-      }
-      span{
-        color:white;
-      }
+    
+    .menu-data ul li a:hover em {
+        color: red; 
     }
-
-   
+       
     .menu-data ul li a {
         color: #fff;
     }

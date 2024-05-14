@@ -18,6 +18,11 @@
                             </a>
                         </div>
                         <div class="col mb-3">
+                            <a href="https://accounts.binance.com/en/login?loginChannel=&return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vZW4vbXkvZGFzaGJvYXJk" target="_blank">
+                                <img class="img-fluid" src="Assets/images/paypal.webp" alt="Paypal Funding">
+                            </a>
+                        </div>
+                        <div class="col mb-3">
                             <a href="https://account.skrill.com/wallet/account/login?locale=en" target="_blank">
                                 <img class="img-fluid" src="Assets/images/skrill payment.webp" alt="Skrill Payment">
                             </a>

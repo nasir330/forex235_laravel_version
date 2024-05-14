@@ -16,6 +16,50 @@ use App\Http\Controllers\EducationPageController;
 Route::get('/test',function(){
     return view('test');
 })->name('test');
+
+Route::get('/dashboard',function(){
+    return view('pages.clientDashboard.dashboard');
+})->name('dashboard');
+Route::get('/create-account',function(){
+    return view('pages.clientDashboard.createAccount');
+})->name('account.create');
+Route::get('/deposit',function(){
+    return view('pages.clientDashboard.deposit');
+})->name('deposit');
+Route::get('/deposit-checkout',function(){
+    return view('pages.clientDashboard.deposit-checkout');
+})->name('deposit.checkout');
+Route::get('/withdraw',function(){
+    return view('pages.clientDashboard.withdrawal');
+})->name('withdraw');
+Route::get('/withdraw-checkout',function(){
+    return view('pages.clientDashboard.withdrawal-checkout');
+})->name('withdraw.checkout');
+Route::get('/transaction-history',function(){
+    return view('pages.clientDashboard.transactionHistory');
+})->name('transaction.history');
+Route::get('/wallet',function(){
+    return view('pages.clientDashboard.wallet');
+})->name('wallet');
+Route::get('/settings',function(){
+    return view('pages.clientDashboard.settings');
+})->name('settings');
+Route::get('/settings-change-password',function(){
+    return view('pages.clientDashboard.change-password');
+})->name('settings.change.password');
+Route::get('/two-fa',function(){
+    return view('pages.clientDashboard.two-fa');
+})->name('two.fa');
+Route::get('/two-fa-app',function(){
+    return view('pages.clientDashboard.two-fa-app');
+})->name('two.fa.app');
+Route::get('/two-fa-app-code',function(){
+    return view('pages.clientDashboard.two-fa-app-code');
+})->name('two.fa.app.code');
+Route::get('/two-fa-email',function(){
+    return view('pages.clientDashboard.two-fa-email');
+})->name('two.fa.email');
+
 Route::get('/', function () {
     return view('home');
 })->name('home');

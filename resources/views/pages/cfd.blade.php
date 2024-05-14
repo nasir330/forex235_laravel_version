@@ -134,6 +134,36 @@
                                     <td>Monday | 16:35</td>
                                     <td>Friday | 22:55</td>
                                 </tr>
+                                <tr>
+                                    <td>ESP35</td>
+                                    <td>Spain 35 Index</td>
+                                    <td>Monday | 16:35</td>
+                                    <td>Friday | 22:55</td>
+                                </tr>
+                                <tr>
+                                    <td>HKG33</td>
+                                    <td>Hong Kong 33 Index</td>
+                                    <td>Monday | 16:35</td>
+                                    <td>Friday | 22:55</td>
+                                </tr>
+                                <tr>
+                                    <td>NAS100</td>
+                                    <td>NASDAQ 100 Index of US listed shares</td>
+                                    <td>Monday | 16:35</td>
+                                    <td>Friday | 22:55</td>
+                                </tr>
+                                <tr>
+                                    <td>SPX500</td>
+                                    <td>S&P 500 Index of US listed Shares</td>
+                                    <td>Monday | 16:35</td>
+                                    <td>Friday | 22:55</td>
+                                </tr>
+                                <tr>
+                                    <td>US30</td>
+                                    <td>US 30 Index</td>
+                                    <td>Monday | 16:35</td>
+                                    <td>Friday | 22:55</td>
+                                </tr>
 
                                 <tr>
                                     <td>#AAPL</td>
@@ -381,7 +411,7 @@
                                     <td>Monday | 16:35</td>
                                     <td>Friday | 22:55</td>
                                 </tr>
-                                
+
 
                             </tbody>
                         </table>

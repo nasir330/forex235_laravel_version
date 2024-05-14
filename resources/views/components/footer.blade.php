@@ -87,7 +87,7 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
 
-<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
 
 <!--Bootstrap JS CDN Link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -106,7 +106,12 @@
 <!--Lcoal Bootstrap JS  Link -->
 {{-- <script src="Assets/js/bootstrap.bundle.min.js"></script> --}}
 
-
+<!--data table script start-->
+<script>
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
 <!--AI robot page script start-->
 <script>
     //declare aiPageHeader function

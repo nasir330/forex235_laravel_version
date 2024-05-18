@@ -61,8 +61,7 @@
                         alt="Forex Margin Calculator">
                     <h1 class="text-center">Trading Robot <em class="text-warning">Gold</em></h1>
                     <h5 class="px-2 text-justify">
-                        "Automated Forex trading robots execute trades based on programmed algorithms, aiming to
-                        maximize profits in currency markets efficiently."
+                        "Gold trading robots use algorithms to maximize profits in the Gold market, providing an efficient approach for investors"
                     </h5>
                     <h5 class="text-center text-white bg-primary px-2 py-1">
                         Price  $999.00 - $5000.00
@@ -87,8 +86,7 @@
                         alt="Forex Margin Calculator">
                     <h1 class="text-center">Trading Robot <em class="text-white">Crypto</em></h1>
                     <h5 class="px-2 text-justify">
-                        "Automated Forex trading robots execute trades based on programmed algorithms, aiming to
-                        maximize profits in currency markets efficiently."
+                        "Trading Robot Crypto utilizes algorithms for maximizing profits in cryptocurrency markets, offering efficient automated trading solutions for investors"
                     </h5>
                     <h5 class="text-center text-white bg-primary px-2 py-1">
                         Price $499.00 - $3000.00

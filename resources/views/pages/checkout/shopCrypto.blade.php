@@ -22,14 +22,13 @@
                         alt="Forex Margin Calculator">
                 </div>
                 <div class="col-md-6 p-4 text-left zoom-in">
-                    <h3 class="text-uppercase">Trading Robot Forex</h3>
+                    <h3 class="text-uppercase">Trading Robot Crypto</h3>
 
                     <h1 class="px-2 py-1">
                         $499.00 -  $3000.00<sup style="font-size:14px; color:darkorange;">(Per Single Item)</sup>
                     </h1>
                     <p class="mt-4">
-                        Maximize profits with our AI Forex trading robot. Gain insights, automate trades, and optimize
-                        strategies for smarter investing.
+                        Maximize gains with our Crypto trading bot. Automate trades, gain insights, and optimize strategies for smarter investments in cryptocurrencies.
                     </p>
                     <div>
                         <form id="cryptoPackage" action="">

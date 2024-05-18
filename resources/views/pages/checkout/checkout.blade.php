@@ -99,23 +99,31 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="width:40%;">TRADING ROBOT FOREX <span class="text-warning">*</span>
-                                        <strong>1</strong></td>
+                                    <td style="width:40%;">TRADING ROBOT FOREX <em>(6 Months)</em> </td>
                                     <td>$499.00 </td>
                                     <td>1 </td>
                                     <td>$499.00 </td>
                                 </tr>
                                 <tr>
+                                    <td style="width:40%;"><strong>Additional</strong> (Server Cost Monthly) </td>
+                                    <td>$50.00 </td>
+                                    <td>1 </td>
+                                    <td>$50.00 </td>
+                                </tr>
+                                <tr>
                                     <td colspan="3" style="width:40%; text-align:right">Subtotal</td>
-                                    <td>$499.00 </td>
+                                    <td>$549.00 </td>
                                 </tr>
                                 <tr>
                                     <td colspan="3" style="width:40%; text-align:right">Total</td>
-                                    <td><strong>$499.00</strong> </td>
+                                    <td><strong>$549.00</strong> </td>
                                 </tr>
                             </tbody>
                         </table>
-
+                        <em>
+                            Execute trades with FOREX 235 by <strong>trading 10 Standard Lots</strong> <mark>and avail yourself of the server
+                                fee, priced at $50</mark> . Simply assert your claim and seize this opportunity.
+                        </em>
                     </div>
                 </div>
                 <!--payment methdo section start-->

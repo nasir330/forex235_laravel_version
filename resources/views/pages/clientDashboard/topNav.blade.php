@@ -27,20 +27,20 @@
                 <i class="fa-regular fa-grid dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></i>
                 <ul class="dropdown-menu">
                     <span>
-                        <a href="#" class="dropdown-item">
+                        <a href="{{route('dashboard')}}" class="dropdown-item">
                             <i class="fa-regular fa-grid-2-plus"></i>
                             Client Dashboard
                         </a>
                     </span>
                     <span>
-                        <a href="#" class="dropdown-item">
+                        <a href="https://forex235.com/" class="dropdown-item" target="_blank">
                             <i class="fa-light fa-globe"></i>
                             Our website
                         </a>
                     </span>
 
                     <span>
-                        <a href="#" class="dropdown-item">
+                        <a href="https://ib.forex235.com/" class="dropdown-item" target="_blank">
                             <i class="fa-regular fa-handshake"></i>
                             Partner Program
                         </a>
@@ -57,7 +57,7 @@
                         user@email.com
                     </span>
                     <span>
-                        <a href="#" class="dropdown-item">
+                        <a href="{{route('settings')}}" class="dropdown-item">
                             <i class="fa-regular fa-gear"></i>
                             Settings
                         </a>

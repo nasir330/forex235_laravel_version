@@ -7,12 +7,35 @@
             </div>
 
             <div class="col d-flex justify-content-end align-self-center">
-                <a href="#" class="btn auth-btn pcAuthLoginBtn mx-1">Login</a>
-                <a href="#" class="btn auth-btn pcAuthRegisterBtn mx-1">Register</a>
+                <span id="loginOption" class="dropdown">
+                    <a href="#" class="btn auth-btn pcAuthLoginBtn mx-1 dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Login
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>                            
+                            <a class="dropdown-item" href="{{route('login')}}" target="_blank">
+                                <i class="fa-duotone fa-key-skeleton-left-right"></i>
+                                Client Login
+                            </a>
+                        </li>
+                        <li>                            
+                            <a class="dropdown-item" href="https://portal.forex235.com/" target="_blank">
+                                <i class="fa-regular fa-key"></i>
+                                Portal Login
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </span>
+                <span>
+                    <a href="#" class="btn auth-btn pcAuthRegisterBtn mx-1">Register</a>
+                </span>
                 <div class="d-lg-block d-none dropdown btn lang-btn me-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink78"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                            class="flag-icon flag-icon-us"></span> English</a>
+                            class="flag-icon flag-icon-us"></span>
+                        English</a>
                     <div style="width:200px;" class="dropdown-menu theme-bg-color"
                         aria-labelledby="navbarDropdownMenuLink78">
                         <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-us"></span> English</a>
@@ -31,8 +54,7 @@
                 </div>
             </div>
             <!--PC Login and register section start-->
-            @include('templates.login')
-            @include('templates.register')
+           
             <!--PC Login and register section end-->
 
         </div>

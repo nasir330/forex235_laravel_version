@@ -23,7 +23,7 @@
                                 <h2> <strong> 1000</strong>.00 USD</h2>
                             </div>
                             <div class="col-md-3 mt-3">
-                                <a href="#" class="btn client_dashboar-btn">
+                                <a href="{{ route('deposit.checkout') }}" class="btn client_dashboar-btn">
                                     <i class="fa-duotone fa-sack-dollar"></i>
                                     Deposit Now
                                 </a>
@@ -75,18 +75,18 @@
                                                 <a href="#" class="btn client_dashboar-btn dropdown-toggle p-1"
                                                     type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
                                                         class="fa-solid fa-cog"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">Add Fund</a></li>
-                                                            <li><a class="dropdown-item" href="#">Withdraw Fund</a></li>
-                                                            <li><a class="dropdown-item" href="#">Trades</a></li>
-                                                            <li><a class="dropdown-item" href="#">Reset Password</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Change Leverage</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Archive Account</a>
-                                                            </li>
-        
-                                                        </ul>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item"
+                                                            href="{{ route('deposit.checkout') }}">Add Fund</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="{{ route('withdraw.checkout') }}">Withdraw Fund</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Trades</a></li>
+                                                    <li><a class="dropdown-item" href="#">Reset Password</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Change Leverage</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </td>
                                     </tr>
@@ -101,18 +101,16 @@
                                                     type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
                                                         class="fa-solid fa-cog"></i></a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Account Information</a>
+                                                    <li><a class="dropdown-item"
+                                                            href="{{ route('deposit.checkout') }}">Add Fund</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="{{ route('withdraw.checkout') }}">Withdraw Fund</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Fund Transfer</a></li>
-                                                    <li><a class="dropdown-item" href="#">Change Leverage</a></li>
-                                                    <li><a class="dropdown-item" href="#">Change Trading
-                                                            Password</a>
+                                                    <li><a class="dropdown-item" href="#">Trades</a></li>
+                                                    <li><a class="dropdown-item" href="#">Reset Password</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Change Trading
-                                                            Password</a>
+                                                    <li><a class="dropdown-item" href="#">Change Leverage</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="#">Archive Account</a></li>
-
                                                 </ul>
                                             </div>
                                         </td>
@@ -146,18 +144,18 @@
                                                 <a href="#" class="btn client_dashboar-btn dropdown-toggle p-1"
                                                     type="button" data-bs-toggle="dropdown" aria-expanded="false"><i
                                                         class="fa-solid fa-cog"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">Add Fund</a></li>
-                                                            <li><a class="dropdown-item" href="#">Withdraw Fund</a></li>
-                                                            <li><a class="dropdown-item" href="#">Trades</a></li>
-                                                            <li><a class="dropdown-item" href="#">Reset Password</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Change Leverage</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Archive Account</a>
-                                                            </li>
-        
-                                                        </ul>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Add Fund</a></li>
+                                                    <li><a class="dropdown-item" href="#">Withdraw Fund</a></li>
+                                                    <li><a class="dropdown-item" href="#">Trades</a></li>
+                                                    <li><a class="dropdown-item" href="#">Reset Password</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Change Leverage</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Archive Account</a>
+                                                    </li>
+
+                                                </ul>
                                             </div>
                                         </td>
                                     </tr>

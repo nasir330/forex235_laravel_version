@@ -16,6 +16,9 @@ use App\Http\Controllers\EducationPageController;
 Route::get('/test',function(){
     return view('test');
 })->name('test');
+Route::get('/login',function(){
+    return view('templates.login');
+})->name('login');
 
 Route::get('/dashboard',function(){
     return view('pages.clientDashboard.dashboard');
@@ -23,6 +26,9 @@ Route::get('/dashboard',function(){
 Route::get('/create-account',function(){
     return view('pages.clientDashboard.createAccount');
 })->name('account.create');
+Route::get('/create-trading-account',function(){
+    return view('pages.clientDashboard.createAccountForm');
+})->name('trading.account.create');
 Route::get('/deposit',function(){
     return view('pages.clientDashboard.deposit');
 })->name('deposit');

@@ -28,13 +28,12 @@
                         $999.00 -  $5000.00<sup style="font-size:14px; color:darkorange;">(Per Single Item)</sup>
                     </h1>
                     <p class="mt-4">
-                        Maximize profits with our AI Forex trading robot. Gain insights, automate trades, and optimize
-                        strategies for smarter investing.
+                        Boost gains with our Gold trading robot. Automate trades, gain insights, and optimize strategies for smarter investments in gold
                     </p>
                     <div>
                         <form id="goldPackage" action="">
                             <div class="input-group mb-3">
-                                <select onchange="packageSelector(this.form)" name="" id="robotPackage" class="form-select form-control">
+                                <select onchange="packageSelector(this.form)" name="" id="robotPackage" class="form-select form-control" required>
                                     <option value="">choose an Option</option>
                                     <option value="6m">6 months</option>
                                     <option value="1yr">One Year</option>

@@ -2,8 +2,8 @@
     <!--menu from left sidebar start-->
     <div id="mySidenav" class="sidenav">
         <div class="justify-content-start btn lang-btn">
-            <a class="" href="#" id="navbarDropdownMenuLink78" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"></span></a>
+            <a class="" href="#" id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><span class="flag-icon flag-icon-us"></span></a>
         </div>
         <a href="javascript:void(0)" class="closebtn">&times;</a>
         <ul>
@@ -37,13 +37,11 @@
     <!--responsive menu list item section start-->
     <!--tradingDataMenu start-->
     <div id="tradingDataMenu" class="tradingDataMenu">
-        <a href="javascript:void(0)" class="backBtn"><i
-                class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
+        <a href="javascript:void(0)" class="backBtn"><i class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
         <a href="javascript:void(0)" class="menuClosebtn">&times;</a>
         <ul>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#finance" aria-expanded="false"
-                aria-controls="finance">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#finance" aria-expanded="false" aria-controls="finance">
                 <span class="text-warning">
                     Finance
                 </span>
@@ -56,14 +54,13 @@
                     </li>
                     <li><a class="menu-data" href="#">Payments Options</a></li>
                     <li><a class="menu-data" href="{% url 'funds-security' %}">Funds Security</a></li>
-                    <li><a href="https://ib.forex235.com/" target="_blank"  class="menu-data">Partner Program</a></li>
-                        <li><a href="#"  class="menu-data">Referral Program</a></li>
+                    <li><a href="https://ib.forex235.com/" target="_blank" class="menu-data">Partner Program</a></li>
+                    <li><a href="#" class="menu-data">Referral Program</a></li>
 
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#tradingCondition" aria-expanded="false"
-                aria-controls="tradingCondition">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#tradingCondition" aria-expanded="false" aria-controls="tradingCondition">
                 <span class="text-warning">
                     Trading Conditions
                 </span>
@@ -75,12 +72,11 @@
                     <li><a class="menu-data" href="#">Standard Account</a></li>
                     <li><a class="menu-data" href="#">Premium Account</a></li>
                     <li><a class="menu-data" href="#">VIP Account</a></li>
-                    <li><a class="menu-data" href="#">Demo Account</a></li>                       
+                    <li><a class="menu-data" href="#">Demo Account</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#instrument" aria-expanded="false"
-                aria-controls="instrument">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#instrument" aria-expanded="false" aria-controls="instrument">
                 <span class="text-warning">
                     Instruments
                 </span>
@@ -100,13 +96,11 @@
 
     <!--platformDataMenu start-->
     <div id="platformDataMenu" class="platformDataMenu">
-        <a href="javascript:void(0)" class="backBtn"><i
-                class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
+        <a href="javascript:void(0)" class="backBtn"><i class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
         <a href="javascript:void(0)" class="menuClosebtn">&times;</a>
         <ul>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#finance" aria-expanded="false"
-                aria-controls="finance">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#finance" aria-expanded="false" aria-controls="finance">
                 <span class="text-warning">
                     Web Platform
                 </span>
@@ -119,9 +113,8 @@
 
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#tradingCondition" aria-expanded="false"
-                aria-controls="tradingCondition">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#tradingCondition" aria-expanded="false" aria-controls="tradingCondition">
                 <span class="text-warning">
                     MT4
                 </span>
@@ -134,9 +127,8 @@
                     <li><a class="menu-data" href="{% static 'platforms/forex235MT4setup.exe' %}">Windows</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#instrument" aria-expanded="false"
-                aria-controls="instrument">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#instrument" aria-expanded="false" aria-controls="instrument">
                 <span class="text-warning">
                     MT5
                 </span>
@@ -155,12 +147,11 @@
 
     <!--marketDataMenu start-->
     <div id="marketDataMenu" class="marketDataMenu">
-        <a href="javascript:void(0)" class="backBtn"><i
-                class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
+        <a href="javascript:void(0)" class="backBtn"><i class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
         <a href="javascript:void(0)" class="menuClosebtn">&times;</a>
         <ul>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#forex" aria-expanded="false" aria-controls="forex">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#forex" aria-expanded="false" aria-controls="forex">
                 <span class="text-warning">
                     Forex
                 </span>
@@ -177,9 +168,8 @@
                     <li><a class="menu-data" href="{% url 'forex-market' %}">More</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#commodities" aria-expanded="false"
-                aria-controls="commodities">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#commodities" aria-expanded="false" aria-controls="commodities">
                 <span class="text-warning">
                     Commodities
                 </span>
@@ -195,8 +185,8 @@
                     <li><a class="menu-data" href="{% url 'commodities-market' %}">More</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#cfd" aria-expanded="false" aria-controls="cfd">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#cfd" aria-expanded="false" aria-controls="cfd">
                 <span class="text-warning">
                     CFD
                 </span>
@@ -212,8 +202,8 @@
                     <li><a class="menu-data" href="{% url 'cfd-market' %}">More</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#crypto" aria-expanded="false" aria-controls="crypto">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#crypto" aria-expanded="false" aria-controls="crypto">
                 <span class="text-warning">
                     Crypto
                 </span>
@@ -235,13 +225,11 @@
 
     <!--newsAnalysisDataMenu start-->
     <div id="newsAnalysisDataMenu" class="newsAnalysisDataMenu">
-        <a href="javascript:void(0)" class="backBtn"><i
-                class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
+        <a href="javascript:void(0)" class="backBtn"><i class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
         <a href="javascript:void(0)" class="menuClosebtn">&times;</a>
         <ul>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#technicalAnalysis" aria-expanded="false"
-                aria-controls="technicalAnalysis">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#technicalAnalysis" aria-expanded="false" aria-controls="technicalAnalysis">
                 <span class="text-warning">
                     Technical Analysis
                 </span>
@@ -253,9 +241,8 @@
                     <li><a class="menu-data" href="{% url 'technical-analysis' %}">Technical Analysis</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#fundamentalAnalysis" aria-expanded="false"
-                aria-controls="fundamentalAnalysis">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#fundamentalAnalysis" aria-expanded="false" aria-controls="fundamentalAnalysis">
                 <span class="text-warning">
                     Fundamental Analysis
                 </span>
@@ -266,9 +253,8 @@
                     <li><a class="menu-data" href="{% url 'economic-calendar' %}">Economic Calendar</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#newsCalendar" aria-expanded="false"
-                aria-controls="newsCalendar">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#newsCalendar" aria-expanded="false" aria-controls="newsCalendar">
                 <span class="text-warning">
                     News & Calendar
                 </span>
@@ -285,13 +271,11 @@
 
     <!--toolsEducationDataMenu start-->
     <div id="toolsEducationDataMenu" class="toolsEducationDataMenu">
-        <a href="javascript:void(0)" class="backBtn"><i
-                class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
+        <a href="javascript:void(0)" class="backBtn"><i class="topMenuIcon fa-regular fa-left-long-to-line"></i></a>
         <a href="javascript:void(0)" class="menuClosebtn">&times;</a>
         <ul>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#tradingTools" aria-expanded="false"
-                aria-controls="tradingTools">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#tradingTools" aria-expanded="false" aria-controls="tradingTools">
                 <span class="text-warning">
                     Trading Tools
                 </span>
@@ -305,9 +289,8 @@
                     <li><a href="#">Profit Calculator </a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#educatioin" aria-expanded="false"
-                aria-controls="educatioin">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#educatioin" aria-expanded="false" aria-controls="educatioin">
                 <span class="text-warning">
                     Education
                 </span>
@@ -315,14 +298,13 @@
             </li>
             <div class="collapse" id="educatioin">
                 <ul>
-                    <li><a href="{{route('education.forex')}}">What is Forex ? </a></li>
-                    <li><a href="{{route('education.become.trader')}}">Become a Trader</a></li>
+                    <li><a href="{{ route('education.forex') }}">What is Forex ? </a></li>
+                    <li><a href="{{ route('education.become.trader') }}">Become a Trader</a></li>
                     <li><a href="#">Forex Guid</a></li>
                 </ul>
             </div>
-            <li class="px-3 d-flex justify-content-between align-items-center text-white"
-                data-bs-toggle="collapse" data-bs-target="#tradingGuide" aria-expanded="false"
-                aria-controls="tradingGuide">
+            <li class="px-3 d-flex justify-content-between align-items-center text-white" data-bs-toggle="collapse"
+                data-bs-target="#tradingGuide" aria-expanded="false" aria-controls="tradingGuide">
                 <span class="text-warning">
                     Trading Guide's
                 </span>
@@ -350,13 +332,11 @@
             <div class="card-body bg-transparent">
                 <form action="" class="loginForm">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control"
-                            placeholder="name@example.com">
+                        <input type="email" class="form-control" placeholder="name@example.com">
                         <label>Email address</label>
                     </div>
                     <div class="form-floating mb-1">
-                        <input type="password" class="form-control"
-                            placeholder="Password">
+                        <input type="password" class="form-control" placeholder="Password">
                         <label>Password</label>
                     </div>
                     <div class="col text-center">
@@ -389,13 +369,11 @@
             <div class="card-body bg-transparent">
                 <form action="" class="loginForm registerform">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" 
-                            placeholder="name@example.com">
+                        <input type="email" class="form-control" placeholder="name@example.com">
                         <label>Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control"
-                            placeholder="Password">
+                        <input type="password" class="form-control" placeholder="Password">
                         <label>Password</label>
                     </div>
 
@@ -431,14 +409,28 @@
             </a>
             <!--Logo end-->
         </div>
-        <div class="col-3 d-flex justify-content-end">
+        <div id="responsive_loginOption" class="col-3 d-flex justify-content-end dropdown">
             <!-- right auth menu button start-->
-            <button class="btn btn-sm authMenuBtn mx-2 lang-btn" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn btn-sm authMenuBtn mx-2 lang-btn dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="autIcon fa-duotone fa-right-to-bracket"></span>
             </button>
             <!-- right auth menu button end-->
+            <ul class="dropdown-menu">
+                <li>                            
+                    <a class="dropdown-item" href="{{route('login')}}" target="_blank">
+                        <i class="fa-duotone fa-key-skeleton-left-right"></i>
+                        Client Login
+                    </a>
+                </li>
+                <li>                            
+                    <a class="dropdown-item" href="https://portal.forex235.com/" target="_blank">
+                        <i class="fa-regular fa-key"></i>
+                        Portal Login
+                    </a>
+                </li>
+                
+            </ul>
         </div>
     </nav>
     <!--top navigation end-->
